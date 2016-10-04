@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+
+    <div class="who-we-are js__background_color" data-background-color="#ffffff">
+        <div class="container">
+            <div class="row who-we-are-inner">
+                <div class="col-md-5 col-left">
+                    <h2 class="q">our story</h2>
+                    <h3 class="a">We are the best team cleaning</h3>
+                    <span class="tgs"></span>
+                    <div class="text">
+                        <p>
+                            Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.  Labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <p>
+                            Architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        </p>
+                    </div>
+                    <a href="#" class="btn-yellow">See more</a>
+                </div>
+                <div class="col-md-7 col-right">
+                    <img src='{% static "img/demo/who-we-are.png" %}' alt="" class="img-responsive" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.who-we-are -->
+	
+	<div class="fun-facts counter js__counters">   
+        <div class="container content">
+			<div class="text-center margin-bottom-100">
+				<h2 class="q">Achievements of our company</h2>
+				<h3 class="a">The best cleaning services</h3>
+				<span class="tgs"></span>
+			</div>
+            <div class="row">
+                <div class="col-sm-3 item item-gray">
+                    <div class="counter-icon">
+                        <i class="fa-icon-paper-plane-o"></i>
+                    </div>
+                    <span class="num js__counter_num" data-from="1" data-to="2310">
+                        2310
+                    </span>
+                    <span class="name">
+                        Project finish
+                    </span>
+                </div>
+                <div class="col-sm-3 item item-gray">
+                    <div class="counter-icon">
+                        <i class="fa-icon-thumbs-up"></i>
+                    </div>
+                    <span class="num js__counter_num" data-from="1" data-to="1680">
+                        1680
+                    </span>
+                    <span class="name">
+                        Satified customers
+                    </span>
+                </div>
+                <div class="col-sm-3 item item-gray">
+                    <div class="counter-icon">
+                        <i class="fa-icon-comment-o"></i>
+                    </div>
+                    <span class="num js__counter_num" data-from="1" data-to="3152">
+                        3152
+                    </span>
+                    <span class="name">
+                        Cleaning tip advices
+                    </span>
+                </div>
+                <div class="col-sm-3 item item-gray">
+                    <div class="counter-icon">
+                        <i class="fa-icon-users"></i>
+                    </div>
+                    <span class="num js__counter_num" data-from="1" data-to="529">
+                        529
+                    </span>
+                    <span class="name">
+                        Staff around the world
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.fun-facts -->
+{% endblock %}	

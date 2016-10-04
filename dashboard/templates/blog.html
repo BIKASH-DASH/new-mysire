@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+
+    <div class="container">
+		<div class="row padding-top-75">
+			<div class="col-xs-12 col-md-9">
+				<div class="blog-list-full-detail">
+				
+					<div class="blog-list-item post-image">
+						<a href="blog-detail.html" class="thumb">
+							<div class="date"><span class="d">04</span><span class="m">AUG</span></div>
+							<span class="post-type"><i class="fa-icon-image"></i></span>
+							<img src='{% static "img/demo/brs-1.jpg" %}' alt="">
+						</a>
+						<div class="content">
+							<h2 class="title"><a href="blog-detail.html">This Is Single Image Blog Post</a></h2>
+							<div class="post-meta">Post by <a href="#" class="author">Admin</a><span class="split">/</span>In <a href="#" class="cat">Vehicle Cleaning</a></div>
+							<p class="desc">Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam volup tatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>
+							<a href="blog-detail.html" class="readmore">Read More »</a>
+						</div>
+					</div>
+					<div class="blog-list-item post-slider">
+						<div class="thumb">
+							<div class="date"><span class="d">04</span><span class="m">AUG</span></div>
+							<span class="post-type"><i class="fa-icon-image"></i></span>
+							<div class="js__flexslider">
+								<ul class="slides">
+									<li><img src='{% static "img/demo/brs-2.jpg" %}' alt=""></li>
+									<li><img src='{% static "img/demo/brs-1.jpg" %}' alt=""></li>
+									<li><img src='{% static "img/demo/brs-3.jpg" %}' alt=""></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content">
+							<h1 class="title"><a href="blog-detail.html">This Is Single Image Slider Post</a></h1>
+							<div class="post-meta">Post by <a href="#" class="author">Admin</a><span class="split">/</span>In <a href="#" class="cat">Vehicle Cleaning</a></div>
+							<p class="desc">Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam volup tatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>
+							<a href="blog-detail.html" class="readmore">Read More »</a>
+						</div>
+					</div>
+					<div class="blog-list-item post-video">
+						<a href="blog-detail.html" class="thumb">
+							<div class="date"><span class="d">04</span><span class="m">AUG</span></div>
+							<span class="post-type"><i class="fa-icon-image"></i></span>
+							<img src='{% static "img/demo/brs-3.jpg" %}' alt="">
+						</a>
+						<div class="content">
+							<h1 class="title"><a href="blog-detail.html">This Is Single Video Post</a></h1>
+							<div class="post-meta">Post by <a href="#" class="author">Admin</a><span class="split">/</span>In <a href="#" class="cat">Vehicle Cleaning</a></div>
+							<p class="desc">Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam volup tatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>
+							<a href="blog-detail.html" class="readmore">Read More »</a>
+						</div>
+					</div>
+					<div class="blog-list-item post-quote">
+						<div class="thumb">
+							<div class="date"><span class="d">04</span><span class="m">AUG</span></div>
+							<span class="post-type"><i class="fa-icon-quote-left"></i></span>
+							<p class="quote">Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archit ecto beatae vitae dicta sunt explicabo. Nemo enim ipsam fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem. </p>
+							<img src='{% static "img/demo/brs-4.jpg" %}' alt="">
+						</div>
+						<div class="content">
+							<h1 class="title"><a href="blog-detail.html">This Is Single Quote Post</a></h1>
+							<div class="post-meta">Post by <a href="#" class="author">Admin</a><span class="split">/</span>In <a href="#" class="cat">Vehicle Cleaning</a>, <a href="#" class="cat">Building Cleaning</a></div>
+							<a href="blog-detail.html" class="readmore">Read More »</a>
+						</div>
+					</div>
+					
+					
+					<div class="text-center">
+						<a href="#" title="View All Post" class="btn-blue view-all-post">View All Post</a>
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<div class="sidebar">
+					<aside class="widget widget_categories widget-list">
+						<h3 class="widget-title">Categories</h3>
+						<ul>
+							<li class="current-cat"><a href="#">All</a></li>
+							<li><a href="#">Home cleaning</a></li>
+							<li><a href="#">Building cleaning</a></li>
+							<li><a href="#">Window building cleaning</a></li>
+							<li><a href="#">Vehicle cleaning</a></li>
+							<li><a href="#">Commercial cleaning</a></li>
+							<li><a href="#">Maintenance cleaning</a></li>
+						</ul>
+					</aside>
+					<!-- /.widget widget_categories -->
+					
+					<aside class="widget widget-recent-post">
+						<h3 class="widget-title">Recent Posts</h3>
+						<ul>
+							<li>
+								<a href="#" class="thumb"><img src='{% static "img/demo/rcp-1.jpg" %}' alt=""></a>
+								<h5 class="title"><a href="#">Perspiciatis unde omnis iste natus error sit volupta.</a></h5>
+								<div class="date">Aug 04 - 2016</div>
+							</li>
+							<li>
+								<a href="#" class="thumb"><img src='{% static "img/demo/rcp-2.jpg" %}' alt=""></a>
+								<h5 class="title"><a href="#">Enim ipsam voluptatem quia voluptas sit aspernatur</a></h5>
+								<div class="date">Aug 04 - 2016</div>
+							</li>
+							<li>
+								<a href="#" class="thumb"><img src='{% static "img/demo/rcp-3.jpg" %}' alt=""></a>
+								<h5 class="title"><a href="#">Similique sunt in culpa qui officia.</a></h5>
+								<div class="date">Aug 04 - 2016</div>
+							</li>
+							<li>
+								<a href="#" class="thumb"><img src='{% static "img/demo/rcp-4.jpg" %}' alt=""></a>
+								<h5 class="title"><a href="#">Consequuntur magni dolores eos qui</a></h5>
+								<div class="date">Aug 04 - 2016</div>
+							</li>
+							<li>
+								<a href="#" class="thumb"><img src='{% static "img/demo/rcp-5.jpg" %}' alt=""></a>
+								<h5 class="title"><a href="#">Exercitationem ullam cor poris suscipit</a></h5>
+								<div class="date">Aug 04 - 2016</div>
+							</li>
+						</ul>
+					</aside>
+					<!-- /.widget widget-recent-post -->
+					
+					<aside class="widget widget_tag_cloud">
+						<h3 class="widget-title">Popular Tags</h3>
+						<div class="tagcloud">
+							<a href="#">Amazing</a>
+							<a href="#">Envato</a>
+							<a href="#">Template</a>
+							<a href="#">Clean</a>
+							<a href="#">Cleaning services</a>
+							<a href="#">SEO</a>
+							<a href="#">business</a>
+							<a href="#">nice</a>
+							<a href="#">Flat</a>
+							<a href="#">Design</a>
+						</div>
+					</aside>
+					<!-- /.widget widget_tag_cloud -->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}	

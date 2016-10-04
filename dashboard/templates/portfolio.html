@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+
+	
+	<div class="container padding-top-75">
+		<div class="portfolio js__isotope_wrap">
+			<ul class="portfolio-filter js__isotope_filter">
+				<li><a href="#" class="js__filter_active" data-filter="*">All</a></li>
+				<li><a href="#" data-filter=".home-cleaning">Home Cleaning</a></li>
+				<li><a href="#" data-filter=".building-cleaning">Building Cleaning</a></li>
+				<li><a href="#" data-filter=".window-building-cleaning">Window Building Cleaning</a></li>
+				<li><a href="#" data-filter=".vehicle-cleaning">Vehicle Cleaning</a></li>
+				<li><a href="#" data-filter=".commercial-cleaning">Commercial Cleaning</a></li>
+				<li><a href="#" data-filter=".maintenance-service">Maintenance Service</a></li>
+			</ul>
+			<div class="row text-center js__isotope_content">
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item vehicle-cleaning">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-1.jpg" %}' alt="">
+							<span>Detail</span>
+						</a> 
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item home-cleaning building-cleaning">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-2.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item commercial-cleaning maintenance-service">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-3.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item building-cleaning commercial-cleaning">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-4.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item building-cleaning">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-5.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item vehicle-cleaning">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-6.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item vehicle-cleaning">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-7.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item commercial-cleaning ">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-8.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item window-building-cleaning">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-9.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item building-cleaning">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-5.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item home-cleaning building-cleaning">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-2.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 js__isotope_item home-cleaning building-cleaning">
+					<div class="item-portfolio">
+						<a href="portfolio-single.html" class="thumb">
+							<img src='{% static "img/demo/img-medium-portfolio-1.jpg" %}' alt="">
+							<span>Detail</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="ajax_load_more_button btn-blue">LOAD MORE</button>
+		</div>
+	</div>
+	
+
+	
+	
+{% endblock %}	

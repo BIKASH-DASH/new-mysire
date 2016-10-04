@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Home Version{% endblock %}</title>
+    {% load staticfiles %}
+    <link rel="shortcut icon" href="{% static 'f.png' %}" />
+    <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    
+    
+</head>
+
+<body class="style-green">
+    <div class="index3-wrapper">
+        <div class="content">
+            <div class="header-fixed header">
+                <div class="container">
+                    <div class="header-left">
+                        <div class="logo">
+                            <a href='{% url "dashboard:index" %}' title=""><img src="{% static 'img/logo-white.png' %}" alt="" /></a>
+                        </div>
+                    </div>
+                    <div class="header-menu">
+                        <a class="menu-mm visible-sm visible-xs" href="#menu">
+                            <span class="icon-bar top"></span>
+                            <span class="icon-bar middle"></span>
+                            <span class="icon-bar bottom"></span>
+                        </a>
+                        <div class="menu hidden-sm hidden-xs desktop-menu">
+                            <ul class="nav-menu list-inline">
+                                <li>
+                                    <a class="active" href="{% url 'dashboard:index' %}">Home</a>
+                                   
+                                </li>
+                                <li><a href="about-us">About US</a>
+                                    <div class="sub-menu-wrap">
+                                        <ul>
+                                            <li><a href='{% url "dashboard:aboutus" %}'>About us</a></li>
+                                            <li><a href='{% url "dashboard:about_us_with_team_members" %}'>About us with team members</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href='{% url "dashboard:service" %}'>Out services</a></li>
+                                <li>
+                                    <a href='{% url "dashboard:portfolio" %}'>Portfolio</a>
+                                   
+                                </li>
+                                <li><a href='{% url "dashboard:blogs" %}'>Our Blog</a>
+                                    
+                                </li>
+                                <li><a href='{% url "dashboard:shop" %}'>Shop</a>
+                                   
+                                </li>
+                                <li><a href='{% url "dashboard:contact" %}'>Contact Us</a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                    
+                        <div class="search">
+                            <i class="fa-icon-search js__open_search"></i>
+                            <form action="index" class="frm-search">
+                                <input type="text" name="q" value="" class="q" placeholder="Search...">
+                                <button type="submit" class="submit"><i class="fa-icon-search"></i></button>
+                            </form>
+                        </div>
+                    
+                        <div class="cart">
+                            <i class="fa-icon-shopping-cart js__open_mini_cart"></i>
+                            <div class="cart_list_wrapper">
+                                <ul class="cart_list">
+                                    <li>
+                                        <a href="#" title=""><img src="{% static 'img/demo/cart-1.png' %}" alt="" class="attachment-shop_thumbnail" /> Multi-Purpose Cleanr</a>
+                                        <span class="amount">$165</span>
+                                        <a title="Remove this item" class="mini-cart-remove" href="#"><span class="fa-icon-times"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title=""><img src="{% static 'img/demo/cart-2.png' %}" alt="" class="attachment-shop_thumbnail" /> Tuff Stuff Cleaner</a>
+                                        <span class="amount">$150</span>
+                                        <a title="Remove this item" class="mini-cart-remove" href="#"><span class="fa-icon-times"></span></a>
+                                    </li>
+                                </ul>
+                                <p class="buttons">
+                                    <a class="button" href="cart"><i class="fa-icon-shopping-cart"></i>View Cart</a>
+                                    <a class="button checkout" href="checkout"><i class="fa-icon-long-arrow-right"></i>Checkout</a>
+                                </p>
+                            </div><!-- /.cart_list_wrapper -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- /.header -->
+            <div class="visible-sm visible-xs mobile-menu">            
+                <nav id="menu">            
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="about-us">About US</a></li>
+                        <li><a href="#">Out services</a></li>
+                        <li><a href="portfolio-2-column-with-caption">Portfolio</a></li>
+                        <li><a href="blog-full-width">Our Blog</a></li>
+                        <li><a href="shop">Shop</a></li>
+                        <li><a href="contact-us">Contact Us</a></li>
+                        <li class="mobile-frm-search-wrap">
+                             <form action="index" class="frm-search">
+                                <input type="text" name="q" value="" class="q" placeholder="Search..." />
+                                <button type="submit" class="submit"><i class="fa-icon-search"></i></button>
+                            </form>   
+                        </li>
+                    </ul>            
+                </nav>
+
+            </div>
+            
+{% block body %}
+{% endblock %}
+    <div class="clients style-yellow">
+        <div class="container">
+            <div class="promotion">
+                <h2><strong>CleanUp</strong> is the Perfect Solution for Your Business</h2>
+                <h3>Don't Forget to Rate the Template. Thanks so much!</h3>
+                <a href="#" class="btn-button btn-black">PURCHASE</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 widget widget_text">
+                    <h3 class="widget-title">About Cleanup</h3>
+                    <div class="textwidget">
+                        <p>
+                            Lorem ipsum Id ut cillum anim cillum sint ut enim eu in labore ad non amet in Excepteur voluptate dolor in.
+                        </p>
+                        <ul class="contact-info">
+                            <li class="phone">
+                                <span class="phone-no">
+                                    1-800-123-456
+                                </span>
+                                <a href="mailto:help@cleanup.com" class="email">help@cleanup.com</a>
+                            </li>
+                            <li class="location">
+                                2018 Wall Avenue - New York City, USA
+                            </li>
+                        </ul>                     
+                    </div>
+                </div><!--/.widget-->
+                <div class="col-sm-6 col-md-3 widget widget_text">
+                    <h3 class="widget-title">Our service</h3>
+                    <div class="textwidget">
+                        <ul>
+                            <li><a href="#" title="">Home cleaning</a></li>
+                            <li><a href="#" title="">Building cleaning</a></li>
+                            <li><a href="#" title="">Window building cleaning</a></li>
+                            <li><a href="#" title="">Vehicle cleaning</a></li>
+                            <li><a href="#" title="">Commerical cleaning</a></li>
+                            <li><a href="#" title="">Maintenance service</a></li>
+                        </ul>                   
+                    </div>
+                </div><!--/.widget-->
+                <div class="col-sm-6 col-md-3 widget widget_text">
+                    <h3 class="widget-title">Help</h3>
+                    <div class="textwidget">
+                        <ul>
+                            <li><a href="#" title="">Contact Us</a></li>
+                            <li><a href="#" title="">Special services</a></li>
+                            <li><a href="#" title="">Adive & tips</a></li>
+                            <li><a href="#" title="">News & video</a></li>
+                            <li><a href="#" title="">Terms & Condition</a></li>
+                            <li><a href="#" title="">Site Map</a></li>
+                        </ul>                  
+                    </div>
+                </div><!--/.widget-->
+                <div class="col-sm-6 col-md-3 widget widget_recent_entries">
+                    <h3 class="widget-title">Recent Post</h3>
+                    <ul>
+                        <li>
+                            <div class="thumb">
+                                <a href="#" title=""><img alt="" src="{% static 'img/demo/latest-post-1.png' %}" height="60" width="60"></a>
+                            </div>
+                            <div class="text">
+                                <a href="#">Perspiciatis unde omnis iste natus error sit</a>
+                                <span class="post-date">Aug 04 - 2015</span>
+                            </div>                            
+                        </li>
+                        <li>
+                            <div class="thumb">
+                                <a href="#" title=""><img alt="" src="{% static 'img/demo/latest-post-2.png' %}" height="60" width="60"></a>
+                            </div>
+                            <div class="text">
+                                <a href="#">Perspiciatis unde omnis iste natus error sit</a>
+                                <span class="post-date">Aug 04 - 2015</span>
+                            </div>                            
+                        </li>
+                    </ul>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- saved /.footer -->
+	
+
+    <div class="site-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    &copy; Copyright 2016 CleanUp. Design by <a href="#">Ninja Team</a>
+                </div>
+                <div class="col-md-6 md-text-right">
+                    <ul class="list-inline footer-menu">                    
+                        <li><a href="#" class="fa-icon-facebook-square"></a></li>
+                        <li><a href="#" class="fa-icon-twitter"></a></li>
+                        <li><a href="#" class="fa-icon-pinterest"></a></li>
+                        <li><a href="#" class="fa-icon-instagram"></a></li>
+                        <li><a href="#" class="fa-icon-skype"></a></li>
+                        <li><a href="#" class="fa-icon-dribbble"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.site-copyright -->
+	
+	<div id="style-selector" class="js__style_switcher">
+		<div class="style-toggle js__ss_toggle"><i class="fa-icon-sliders"></i></div>
+		<div id="style-selector-container">
+			<div class="style-selector-wrapper">
+				<h3 class="ss-title">Style Switcher</h3>
+				<h5 class="ss-title">Theme Skins</h5>
+				<div class="ss-content clearfix">
+					<a href="#" class="ss-button js__active js__ss_themes" data-class="style-blue-yellow">Blue/Yellow</a>
+					<a href="#" class="ss-button js__ss_themes" data-class="style-brown">Brown</a>
+					<a href="#" class="ss-button js__ss_themes" data-class="style-green">Green</a>
+					<a href="#" class="ss-button js__ss_themes" data-class="style-grey">Grey</a>
+					<a href="#" class="ss-button js__ss_themes" data-class="style-orange">Orange</a>
+					<a href="#" class="ss-button js__ss_themes" data-class="style-red">Red</a>
+					<a href="#" class="ss-button js__ss_themes" data-class="style-pink">Pink</a>
+					<a href="#" class="ss-button js__ss_themes" data-class="style-purple">Purple</a>
+				</div>
+				<h5 class="ss-title">Demo Header</h5>
+				<div class="ss-content ss-no-styles">
+					<div class="demos clearfix">
+						<div class="demo-sites">
+							<a href="index">
+								<img src="{% static 'img/demo/index1.jpg' %}" alt="" />
+							</a>
+						</div>
+						<div class="demo-sites">
+							<a href="index2">
+								<img src="{% static 'img/demo/index2.jpg' %}" alt="" />
+							</a>
+						</div>
+						<div class="demo-sites">
+							<a href="index3">
+								<img src="{% static 'img/demo/index3.jpg' %}" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<h5 class="ss-title">Heading Font-Family</h5>
+				<div class="ss-content clearfix">
+					<select class="switcher-select-form js__switcher" data-target="h1,h2,h3,h4,h5,h6">
+						<option value="'Open Sans', sans-serif|https://fonts.googleapis.com/css?family=Open+Sans">Open Sans</option>
+						<option value="'Droid Sans', sans-serif|https://fonts.googleapis.com/css?family=Droid+Sans">Droid Sans</option>
+						<option value="'PT Sans', sans-serif|https://fonts.googleapis.com/css?family=PT+Sans">PT Sans</option>
+						<option value="'Source Sans Pro', sans-serif|https://fonts.googleapis.com/css?family=Source+Sans+Pro">Source Sans Pro</option>
+						<option value="'Raleway', sans-serif|https://fonts.googleapis.com/css?family=Raleway">Raleway</option>
+						<option value="'Josefin Slab', serif|https://fonts.googleapis.com/css?family=Josefin+Slab">Josefin Slab</option>
+						<option value="'Roboto', sans-serif|https://fonts.googleapis.com/css?family=Roboto">Roboto</option>
+						<option value="'Droid Serif', serif|https://fonts.googleapis.com/css?family=Droid+Serif">Droid Serif</option>
+						<option value="'Oswald', sans-serif|https://fonts.googleapis.com/css?family=Oswald">Oswald</option>
+						<option value="'Lato', sans-serif|https://fonts.googleapis.com/css?family=Lato">Lato</option>
+						<option value="'Arvo', serif|https://fonts.googleapis.com/css?family=Arvo">Arvo</option>
+					</select>
+				</div>
+				<h5 class="ss-title">Body Font-Family</h5>
+				<div class="ss-content clearfix">
+					<select class="switcher-select-form js__switcher" data-target="body">
+						<option value="'Open Sans', sans-serif|https://fonts.googleapis.com/css?family=Open+Sans">Open Sans</option>
+						<option value="'Droid Sans', sans-serif|https://fonts.googleapis.com/css?family=Droid+Sans">Droid Sans</option>
+						<option value="'PT Sans', sans-serif|https://fonts.googleapis.com/css?family=PT+Sans">PT Sans</option>
+						<option value="'Source Sans Pro', sans-serif|https://fonts.googleapis.com/css?family=Source+Sans+Pro">Source Sans Pro</option>
+						<option value="'Raleway', sans-serif|https://fonts.googleapis.com/css?family=Raleway">Raleway</option>
+						<option value="'Josefin Slab', serif|https://fonts.googleapis.com/css?family=Josefin+Slab">Josefin Slab</option>
+						<option value="'Roboto', sans-serif|https://fonts.googleapis.com/css?family=Roboto">Roboto</option>
+						<option value="'Droid Serif', serif|https://fonts.googleapis.com/css?family=Droid+Serif">Droid Serif</option>
+						<option value="'Oswald', sans-serif|https://fonts.googleapis.com/css?family=Oswald">Oswald</option>
+						<option value="'Lato', sans-serif|https://fonts.googleapis.com/css?family=Lato">Lato</option>
+						<option value="'Arvo', serif|https://fonts.googleapis.com/css?family=Arvo">Arvo</option>
+					</select>
+				</div>
+				<h5 class="ss-title">Direction</h5>
+				<div class="ss-content clearfix">
+					<a href="#" class="ss-button js__active js__ss_direction" data-store="ltr">LTR</a>
+					<a href="#" class="ss-button js__ss_direction" data-store="rtl">RTL</a>
+				</div>
+			</div>
+		</div><!-- #style-selector-container -->
+	</div><!-- #style-selector -->
+	
+    <div id="toTop" class="js__to_top"><i class="fa-icon-angle-up"></i></div>
+	
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src='{% static "js/jquery.min.js" %}'></script>
+	 <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src='{% static "js/jquery.themepunch.tools.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/jquery.themepunch.revolution.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/extensions/revolution.extension.slideanims.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/extensions/revolution.extension.layeranimation.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/extensions/revolution.extension.navigation.min.js" %}'></script>
+    <script type="text/javascript" src='{% static "js/jquery.revolution.min.js" %}'></script>
+    <script src='{% static "js/bootstrap.min.js" %}'></script>
+    <script src='{% static "js/jquery.inview.min.js" %}'></script>
+    <script src='{% static "js/isMobile.min.js" %}'></script>
+    <script src='{% static "js/jquery.mmenu.min.all.js" %}'></script>
+    <script src='{% static "js/jquery.parallax-1.1.3.js" %}'></script>
+    <script src='{% static "js/countTo.min.js" %}'></script>
+    <script src='{% static "js/slick.min.js" %}'></script>
+    <script src='{% static "js/jquery.flexslider-min.js" %}'></script>
+    <script src='{% static "js/jquery.simpleplayer.min.js" %}'></script>
+    <script src='{% static "js/select2.min.js" %}'></script>
+    <script src='{% static "js/isotope.pkgd.min.js" %}'></script>
+    <script src='{% static "js/cells-by-row.min.js" %}'></script>
+    <script src='{% static "js/jquery.scrollTo.min.js" %}'></script>
+    <script src='{% static "js/nouislider.min.js" %}'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD84ST3FIRNNVS1CEm_IE9KoR-lAIw8OPo" type="text/javascript"></script>
+    <script src='{% static "js/main.min.js" %}'></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+	<div class="container padding-top-75">
+		<div class="row">
+			<div class="col-md-9 col-xs-12 pull-right">
+				<div class="shop-filter shop-filter-small">
+					<div class="shop-sort">
+						<form class="woocommerce-ordering shop-ordering" action="#">
+							<select class="orderby js__select2">
+								<option value="product-name">Product name</option>
+								<option value="rating">Rating</option>
+								<option value="date">Newness</option>
+								<option value="price">Price: low to high</option>
+								<option value="price-desc">Price: high to low</option>
+							</select>
+						</form>
+						<div class="manufacturer-filter">
+							<select class="orderby js__select2" data-placeholder="Select manufacturer">
+								<option value="" label="Select manufacturer"></option>
+								<option value="Dif">DIF</option>
+								<option value="ecover">Ecover</option>
+								<option value="Flash">Flash</option>
+								<option value="mr-clean">Mr. Clean</option>
+							</select>
+						</div>
+					</div>
+					<div class="shop-right pull-right">
+						<p class="woocommerce-result-count">Results 1 - 12 of 96</p>
+						<div class="shop-filter-page">
+							<span>Show</span>
+							<div class="select">
+								<select class="js__select2">
+									<option value="9">9</option>
+									<option value="12">12</option>
+									<option value="15">15</option>
+									<option value="18">18</option>
+									<option value="21">21</option>
+								</select>
+							</div>
+							<span>per page</span>
+						</div>
+					</div>
+				</div><!-- .shop-filter -->
+				
+				<ul class="products row">
+					<li class="col-md-4 col-xs-12">
+						<div class="item-product-list">
+							<a href="shop-details.html" class="thumb">
+								<img src='{% static "img/demo/img-product-1.jpg" %}' alt="" />
+							</a>
+							<a href="shop-details.html" class="content">
+								<h2>Spruce 'n' Clean</h2>
+								<div class="categories">Surface Cleaner</div>
+								<span class="price">
+									<span class="amount">$35.00</span>
+								</span>
+								<div class="star-rating">
+									<span class="js__width" data-width="80%"><strong class="rating">4.00</strong> out of 5</span>
+								</div>
+							</a>
+							<a href="shop-details-with-add-to-cart.html" class="add_to_cart_button">Add to cart</a>
+						</div>
+					</li>
+					<li class="col-md-4 col-xs-12">
+						<div class="item-product-list">
+							<a href="shop-details.html" class="thumb">
+								<img src='{% static "img/demo/img-product-2.jpg" %}' alt="" />
+							</a>
+							<a href="shop-details.html" class="content">
+								<h2>Lemon Soda Clean Kitchen</h2>
+								<div class="categories">Surface Cleaner</div>
+								<span class="price">
+									<span class="amount">$20.00</span>
+								</span>
+							</a>
+							<a href="shop-details-with-add-to-cart.html" class="add_to_cart_button">Add to cart</a>
+						</div>
+					</li>
+					<li class="col-md-4 col-xs-12">
+						<div class="item-product-list">
+							<a href="shop-details.html" class="thumb">
+								<img src='{% static "img/demo/img-product-3.jpg" %}' alt="" />
+							</a>
+							<a href="shop-details.html" class="content">
+								<h2>Awesome Cleaner Bleach</h2>
+								<div class="categories">Window Cleaner</div>
+								<span class="price">
+									<span class="amount">$55.00</span>
+								</span>
+								<div class="star-rating">
+									<span class="js__width" data-width="60%"><strong class="rating">4.00</strong> out of 5</span>
+								</div>
+							</a>
+							<a href="shop-details-with-add-to-cart.html" class="add_to_cart_button">Add to cart</a>
+						</div>
+					</li>
+					<li class="col-md-4 col-xs-12">
+						<div class="item-product-list">
+							<a href="shop-details.html" class="thumb">
+								<img src='{% static "img/demo/img-product-4.jpg" %}' alt="" />
+							</a>
+							<a href="shop-details.html" class="content">
+								<h2>Nature Care</h2>
+								<div class="categories">Bathroom Cleaner</div>
+								<span class="price">
+									<span class="amount">$40.00</span>
+								</span>
+							</a>
+							<a href="shop-details-with-add-to-cart.html" class="add_to_cart_button">Add to cart</a>
+						</div>
+					</li>
+					<li class="col-md-4 col-xs-12">
+						<div class="item-product-list">
+							<a href="shop-details.html" class="thumb">
+								<img src='{% static "img/demo/img-product-5.jpg" %}' alt="" />
+							</a>
+							<a href="shop-details.html" class="content">
+								<h2>Dif Wallpaper Stripper</h2>
+								<div class="categories">Surface Cleaner</div>
+								<span class="price">
+									<span class="amount">$35.00</span>
+								</span>
+							</a>
+							<a href="shop-details-with-add-to-cart.html" class="add_to_cart_button">Add to cart</a>
+						</div>
+					</li>
+					<li class="col-md-4 col-xs-12">
+						<div class="item-product-list">
+							<a href="shop-details.html" class="thumb">
+								<img src='{% static "img/demo/img-product-6.jpg" %}' alt="" />
+							</a>
+							<a href="shop-details.html" class="content">
+								<h2>Multipurpose Glove</h2>
+								<div class="categories">Surface Cleaner</div>
+								<span class="price">
+									<span class="amount">$20.00</span>
+								</span>
+							</a>
+							<a href="shop-details-with-add-to-cart.html" class="add_to_cart_button">Add to cart</a>
+						</div>
+					</li>
+					<li class="col-md-4 col-xs-12">
+						<div class="item-product-list">
+							<a href="shop-details.html" class="thumb">
+								<img src='{% static "img/demo/img-product-7.jpg" %}' alt="" />
+							</a>
+							<a href="shop-details.html" class="content">
+								<h2>Ecover Glass & Surface Cleaner</h2>
+								<div class="categories">Window Cleaner</div>
+								<span class="price">
+									<span class="amount">$55.00</span>
+								</span>
+							</a>
+							<a href="shop-details-with-add-to-cart.html" class="add_to_cart_button">Add to cart</a>
+						</div>
+					</li>
+					<li class="col-md-4 col-xs-12">
+						<div class="item-product-list">
+							<a href="shop-details.html" class="thumb">
+								<img src='{% static "img/demo/img-product-8.jpg" %}' alt="" />
+							</a>
+							<a href="shop-details.html" class="content">
+								<h2>Insect Repellent Clothing</h2>
+								<div class="categories">Bathroom Cleaner</div>
+								<span class="price">
+									<span class="amount">$40.00</span>
+								</span>
+								<div class="star-rating">
+									<span class="js__width" data-width="60%"><strong class="rating">4.00</strong> out of 5</span>
+								</div>
+							</a>
+							<a href="shop-details-with-add-to-cart.html" class="add_to_cart_button">Add to cart</a>
+						</div>
+					</li>
+					<li class="col-md-4 col-xs-12">
+						<div class="item-product-list">
+							<a href="shop-details.html" class="thumb">
+								<img src='{% static "img/demo/img-product-9.jpg" %}' alt="" />
+							</a>
+							<a href="shop-details.html" class="content">
+								<h2>Cleaner Colorful Gloves</h2>
+								<div class="categories">Surface Cleaner</div>
+								<span class="price">
+									<span class="amount">$35.00</span>
+								</span>
+								<div class="star-rating">
+									<span class="js__width" data-width="60%"><strong class="rating">4.00</strong> out of 5</span>
+								</div>
+							</a>
+							<a href="shop-details-with-add-to-cart.html" class="add_to_cart_button">Add to cart</a>
+						</div>
+					</li>
+				</ul><!-- .products -->
+				<nav class="woocommerce-pagination">
+					<ul class="page-numbers">
+						<li><a class="prev fa-icon-angle-double-left" href="#"></a></li>
+						<li><a href="#">1</a></li>
+						<li><span class="current">2</span></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li>...</li>
+						<li><a href="#">6</a></li>
+						<li><a class="next fa-icon-angle-double-right" href="#"></a></li>
+					</ul>
+				</nav>
+				<!-- /.woocommerce-pagination -->
+			</div>
+			<div class="col-md-3 col-xs-12">
+				<div class="sidebar">
+					<aside class="widget widget_categories widget-shop-list">
+						<h2 class="widget-title">Product Categories</h2>
+						<ul>
+							<li><a href="#">All Categories</a></li>
+							<li><a href="#">Surface Cleaner</a></li>
+							<li class="current-cat"><a href="#">Floor Cleaner</a></li>
+							<li><a href="#">Bathroom Cleaner</a></li>
+							<li><a href="#">Kitchen Cleanner</a></li>
+							<li><a href="#">Multipurpose Product</a></li>
+						</ul>
+					</aside>
+					<!-- /.widget widget_categories -->
+					
+					<aside class="widget widget-price-filter js__slider_price_wrap">
+						<h2 class="widget-title">Filter Price</h2>
+						<div class="filter--slider js__slider_price" data-output="yes"></div>
+						<form action="#" class="clearfix">
+							<div class="filter-label">Price: <span class="currency">$</span><span class="js__text_min">25</span><span>.00</span> <span>-</span> <span class="currency">$</span><span class="js__text_max">85</span><span>.00</span></div>
+							<input type="hidden" value="25" name="min" class="js__input_min" />
+							<input type="hidden" value="85" name="max" class="js__input_max" />
+							<input type="submit" class="filter-submit" value="Filter" />
+						</form>
+					</aside><!-- .widget-price-filter -->
+					
+					<aside class="widget widget-best-seller">
+						<h2 class="widget-title">Best Seller</h2>
+						<ul>
+							<li>
+								<a href="#" class="item-product-top-rated">
+									<img src='{% static "img/demo/img-small-product-5.jpg" %}' width="70" height="70" class="wp-post-image" alt="" />
+									<h2>Multipurpose Colorful Glove</h2>
+									<div class="star-rating">
+										<span class="js__width" data-width="80%"><strong class="rating">4.00</strong> out of 5</span>
+									</div>
+									<span class="price">
+										<span class="amount">$20.00</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-product-top-rated">
+									<img src='{% static "img/demo/img-small-product-1.jpg" %}' width="70" height="70" class="wp-post-image" alt="" />
+									<h2>Mr.Clean Liquid Muscle </h2>
+									<div class="star-rating">
+										<span class="js__width" data-width="80%"><strong class="rating">4.00</strong> out of 5</span>
+									</div>
+									<span class="price">
+										<span class="amount">$15.00</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-product-top-rated">
+									<img src='{% static "img/demo/img-small-product-2.jpg" %}' width="70" height="70" class="wp-post-image" alt="" />
+									<h2>Tuff Scuff Cleaner & Degreaser</h2>
+									<div class="star-rating">
+										<span class="js__width" data-width="60%"><strong class="rating">3.00</strong> out of 5</span>
+									</div>
+									<span class="price">
+										<span class="amount">$48.00</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-product-top-rated">
+									<img src='{% static "img/demo/img-small-product-3.jpg" %}' width="70" height="70" class="wp-post-image" alt="" />
+									<h2>Lemon Soda Cleaner</h2>
+									<div class="star-rating">
+										<span class="js__width" data-width="80%"><strong class="rating">4.00</strong> out of 5</span>
+									</div>
+									<span class="price">
+										<span class="amount">$20.00</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-product-top-rated">
+									<img src='{% static "img/demo/img-small-product-4.jpg" %}' width="70" height="70" class="wp-post-image" alt="" />
+									<h2>Multipurpose Glove</h2>
+									<div class="star-rating">
+										<span class="js__width" data-width="80%"><strong class="rating">4.00</strong> out of 5</span>
+									</div>
+									<span class="price">
+										<span class="amount">$8.00</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</aside><!-- .widget-top-rated -->
+					
+					<aside class="widget widget_tag_cloud">
+						<h2 class="widget-title">Popular Tags</h2>
+						<div class="tagcloud">
+							<a href="#">Amazing</a>
+							<a href="#">Envato</a>
+							<a href="#">Template</a>
+							<a href="#">Clean</a>
+							<a href="#">Cleaning services</a>
+							<a href="#">SEO</a>
+							<a href="#">business</a>
+							<a href="#">nice</a>
+							<a href="#">Flat</a>
+							<a href="#">Design</a>
+						</div>
+					</aside>
+					<!-- /.widget widget_tag_cloud -->
+					
+				</div>
+			</div>
+		</div><!-- .row -->
+	</div>
+	
+    <div class="clients style-yellow">
+        <div class="container">
+			<div class="promotion">
+				<h2><strong>CleanUp</strong> is the Perfect Solution for Your Business</h2>
+				<h3>Don't Forget to Rate the Template. Thanks so much!</h3>
+				<a href="#" class="btn-button btn-black">PURCHASE</a>
+			</div>
+        </div>
+    </div>
+    <!-- /.clients -->
+	
+{%endblock%}

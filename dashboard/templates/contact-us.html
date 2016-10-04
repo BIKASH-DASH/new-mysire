@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}
+	<div class="container padding-top-75">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="box-contact">
+					<h2 class="title">Contact Info</h2>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+					<ul class="contact-list">
+						<li>
+							<strong>Address:</strong>
+							<span>1028 Wall Avenue - New York City<br>NY - USA</span>
+						</li>
+						<li>
+							<strong>Email:</strong>
+							<span>
+								<a href="mailto:info@cleanup.com">info@cleanup.com</a><br>
+								<a href="mailto:help@cleanup.com">help@cleanup.com</a>
+							</span>
+						</li>
+						<li>
+							<strong>Phone & Fax:</strong>
+							<span>
+								<a href="tel:1234567890">+1 123 456 7890</a><br>
+								<a href="tel:1234568900">+1 123 456 8900</a>
+							</pspan>
+						</li>
+						<li>
+							<strong>Social network:</strong>
+							<ul>
+								<li><a href="#" class="fa-icon-facebook-square"></a></li>
+								<li><a href="#" class="fa-icon-twitter"></a></li>
+								<li><a href="#" class="fa-icon-pinterest"></a></li>
+								<li><a href="#" class="fa-icon-instagram"></a></li>
+								<li><a href="#" class="fa-icon-skype"></a></li>
+								<li><a href="#" class="fa-icon-dribbble"></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="box-contact">
+					<h2 class="title">Contact Form</h2>
+					<form action="#" class="frm-common">
+						<input type="text" class="inp-text" placeholder="Name">
+						<input type="email" class="inp-text" placeholder="Email Address">
+						<textarea cols="30" rows="10" class="inp-text" placeholder="Message"></textarea>
+						<input type="submit" value="SEND NOW" class="inp-submit btn-blue">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	<div id="js__map_1" class="map-full js__map" data-lat="33.320351" data-lng="-111.907141"></div>
+	
+
+	
+{%endblock%}
