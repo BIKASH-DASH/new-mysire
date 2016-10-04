@@ -9,9 +9,9 @@ from django.conf.urls.static import static
 
 urlpatterns = patterns('',
     # Examples:
-     url(r'^$', 'mysite.views.home', name='home'),
      url(r'^', include('dashboard.urls')),
-
+     url(r'^admin/', admin.site.urls),
+     url(r'^blog/', include('blog.urls')),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
